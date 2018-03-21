@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  // $("#color").click(function(event) {
+  $("form#survey").submit(function(event) {
+    event.preventDefault();
     var favoriteColorSelected = $("#color").val();
-  //   event.preventDefault();
+
   //   console.log(favoriteColorSelected);
   //
-  //   $("#favoriteColor").css( "color", "favoriteColorSelected" );
-  // });
+    $("#favoriteColor").css( "color", favoriteColorSelected);
+  });
 
 
 });

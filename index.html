@@ -10,44 +10,45 @@
   <body>
     <div class="container">
       <h1>Survey</h1>
-      <form id="name">
+      <form id="survey">
         <div class="form-group">
           <label for="name1">Enter your name:</label>
           <input id="name1" class="form-control" type="text">
         </div>
+        <p>What is your favorite food?</p>
+        <select class="form-control" id="favoriteFood">
+          <option value="pizza">pizza</option>
+          <option value="taco">taco</option>
+          <option value="hamburger">hamburger</option>
+          <option value="salad">salad</option>
+        </select>
+        <br>
+        <p>What is your favorite music?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genre" value="rock" checked>
+            Rock
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genre" value="jazz">
+            Jazz
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genre" value="country">
+            Country
+          </label>
+        </div>
+        <br>
+        <div class="form-group" id="colorPick">
+          <label for="color">What is your favorite <span id=favoriteColor>color</span>?</label>
+          <input id="color" class="form" type="color">
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
-      <p>What is your favorite food?</p>
-      <select class="form-control" id="favoriteFood">
-        <option value="pizza">pizza</option>
-        <option value="taco">taco</option>
-        <option value="hamburger">hamburger</option>
-        <option value="salad">salad</option>
-      </select>
-      <br>
-      <p>What is your favorite music?</p>
-      <div class="radio">
-        <label>
-          <input type="radio" name="genre" value="rock" checked>
-          Rock
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="genre" value="jazz">
-          Jazz
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="genre" value="country">
-          Country
-        </label>
-      </div>
-      <br>
-      <div class="form-group" id="colorPick">
-        <label for="color">What is your favorite <span id=favoriteColor>color</span>?</label>
-        <input id="color" class="form-control" type="color">
-      </div>
     </div>
   </body>
 </html>
